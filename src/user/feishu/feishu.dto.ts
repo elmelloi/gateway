@@ -17,7 +17,7 @@ export class FeishuMessageDto {
   content?: string;
 
   @IsNotEmpty()
-  @IsEnum(RECEIVE_TYPE)
+  @IsEnum(MSG_TYPE)
   @ApiProperty({ example: 'text', enum: MSG_TYPE })
   msg_type?: keyof MSG_TYPE;
 }
